@@ -1,0 +1,162 @@
+<!--My Portfolio website | last updated 11/8/21-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        picture img {
+            width:100%
+        }
+    </style>
+    <meta name="description" content="A bit about me and everything I've been working on the past few years.">
+    <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    <!--CSS, Normalize, and fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    <!-- Put this on every page -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      document.querySelector(".main-menu").classList.toggle("menu-show");
+    });
+    });
+    </script>
+</head>
+<body class="main">
+    <header>
+      <div class="main-menu">
+        <div class="menu-icon">
+            <svg viewbox="0 0 60 60">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+              </svg>
+        </div>
+        <nav>
+          <img src="images/AH-logo-star-web.png" alt="Logo of Andrea Hunter created with colorful lines making her initials, AH">
+            <ul>
+                <li><a href="about/">About Me</a></li>
+                <li><a href="adlab/">BYU Adlab</a></li>
+                <li><a href="work/">My Work</a></li>
+                <li><a href="passion/">Passion Projects</a></li>
+                <li><a href="form/">Form</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero">
+        <div class="text-wrapper">
+            <h1>My Portfolio</h1>
+            <p>What I've been up to the last few years.</p>
+        </div>
+        <picture>  
+            <source srcset="images/water-hero-image-1600.jpg" 
+                   media="(min-width: 901px)">
+            <source srcset="images/water-hero-image-900.jpg" 
+                   media="(min-width: 501px)">
+            <source srcset="images/water-hero-image-400.jpg"
+                   media="(max-width: 500px)">
+            <img src="images/water-hero-image-900.jpg" alt="Sunset over the ocean">
+         </picture> 
+    </div>
+    <main>
+        <!--The page links I want featured on the homepage-->
+        <article class="panel">
+          <div class="left image-wrap">
+            <img src="images/HCI-team-colorized.png" alt="Group of young men and women making silly poses for the camera on a turf field in front of a soccer goal at a fitness facility">
+          </div>
+          <div class="text-wrap">
+            <h2>My Work</h2>
+            <p>From jobs to internships to classes outside the advertising program, I've worked with even more clients to make awesome stuff. Some of my top work experiences are:</p>
+            <ol>
+              <li>Marketing Intern at Hill Country Indoor: Sports & Fitness</li>
+              <li>Marketing Assistant at BYUtv</li>
+              <li>Client Services Intern at Baldwin & Obenauf (BNO)</li>
+            </ol>
+            <a class="button" href="work/index.html" target="_blank">See More</a>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="image-wrap">
+            <img src="images/Lover-Album-Cover-Colorized.png" alt="Woman lookind down with clouds behind her and the word Lover written in cursive in the sky">
+          </div>
+          <div class="left text-wrap">
+            <h2>Passion Projects</h2>
+            <p>When I'm not working in the Adlab, an internship, or my job, I'm using my free time to work on fun, creative projects. A few projects I'm currently working on are:</p>
+            <ul>
+              <li>Recreating album cover art using myself as the subject. So far I have done recreations for</li>
+              <li>Virtual Scrapbook of every letter I've ever recieved</li>
+              <li>Writing a musical!</li>
+            </ul>
+            <a class="button" href="passion/index.html" target="_blank">See More</a>
+          </div>
+        </article>
+        <article>
+            <h2>BYU Adlab</h2>
+            <p>The BYU Adlab is Brigham Young University's advertising agency comprised of all students accepted into BYU's advertising program. Through the BYU Adlab, I've worked by myself and with my peers on many ad campaigns for various mock and real clients.</p>
+            <div class="cards">
+                <div class="card">
+                  <a href="adlab/index.html" target="_blank">
+                    <img src="images/Teva-project-colorized.png" alt="Teva Sandal Poster">
+                  </a>
+                  <div class="text-overlay">
+                    <p>Teva Project</p>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <div class="card">
+                  <a href="adlab/index.html" target="_blank">
+                    <img src="images/Bose-project-colorized.png" alt="Bose Headphones Poster">
+                  </a>
+                  <div class="text-overlay">
+                    <p>Bose Project</p>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <div class="card">
+                  <a href="adlab/index.html" target="_blank">
+                    <img src="images/Converse-project-colorized.png" alt="Converse Instagram Poster">
+                  </a>
+                  <div class="text-overlay">
+                    <p>Converse Project</p>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <div class="card">
+                    <a href="adlab/index.html" target="_blank">
+                      <img src="images/Purelypudding-project-colorized.png" alt="Purely Pudding Brand Guidlines Poster">
+                    </a>
+                    <div class="text-overlay">
+                      <p>Pudding Project</p>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+              </div>
+        </article>
+      </main>
+      <footer>
+        <h2>Contact Me</h2>
+        <p>(513)720-3351 | andreasjensen513@gmail.com</p>
+        <h3>Check Me Out On Social Media!</h3>
+        <p>
+            <!-- <a href="https://www.instagram.com/aussiecanucks3/" target="_blank"><img src="https://img.icons8.com/ios/48/000000/facebook-new.png"/></a> -->
+            <a href="https://www.facebook.com/andi.jensen.5249" target="_blank">Facebook: @aussiecanucks3 | </a>
+            <a href="https://www.linkedin.com/in/andreasydneyhunter/" target="_blank">LinkedIn: Andrea Sydney Hunter</a>
+        </p>
+    </footer>
+</body>
+</html>
